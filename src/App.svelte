@@ -2,7 +2,7 @@
     import router from "page";
     import routes from "./routes";
 
-    import Header from "./Header.svelte";
+    import Header from "./components/Header.svelte";
 
     let page = null;
     let params = {};

@@ -1,10 +1,10 @@
-import Home from "./routes/Home.svelte";
+import ItemBrowser from "./routes/ItemBrowser.svelte";
 import PageNotFound from "./routes/PageNotFound.svelte";
 
 export default [
     {
         path: "/",
-        component: Home,
+        component: ItemBrowser,
     },
     {
         path: "*",
