@@ -10,6 +10,8 @@
     } from "firebase/firestore";
     import { app } from "../firebase";
 
+    import Listing from "../components/Listing.svelte";
+
     let listings = [];
 
     onMount(async () => {
@@ -18,10 +20,9 @@
         const snapshot = await getDocs(q);
 
         snapshot.forEach((doc) => {
-            const id = doc.id;
-            listings.push({ id, ...doc.data() });
+            const data = { id: doc.id, ...doc.data() };
+            listings = [...listings, data]; // Trigger state update with every document
         });
-        listings = listings; // Trigger state update
     });
 </script>
 
@@ -33,6 +34,6 @@
     <h1>Earthify</h1>
 
     {#each listings as listing (listing.id)}
-        <p>{listing.name}</p>
+        <Listing {listing} />
     {/each}
 </div>
