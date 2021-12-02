@@ -31,7 +31,7 @@
 </svelte:head>
 
 <div in:fade>
-    <h1>Earthify</h1>
+    <h1 class="display-2">Listings</h1>
 
     {#each listings as listing (listing.id)}
         <Listing {listing} />
