@@ -2,6 +2,10 @@
     import { fade } from "svelte/transition";
 </script>
 
+<svelte:head>
+    <title>404 - Earthify</title>
+</svelte:head>
+
 <div in:fade>
     <h1>404 Not Found</h1>
 </div>
