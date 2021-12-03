@@ -7,5 +7,5 @@
 </svelte:head>
 
 <div in:fade>
-    <h1>404 Not Found</h1>
+    <h1 class="display-2">404 Not Found</h1>
 </div>
