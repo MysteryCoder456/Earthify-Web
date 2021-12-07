@@ -51,9 +51,10 @@
     <span class="title">Earthify</span>
 
     <a href="/">Home</a>
-    <a href="/starred">Starred Listings</a>
+    <a href="/add">Add</a>
+    <a href="/starred">Starred</a>
+    <a href="/manage">Manage</a>
     <a href="/chats">Chats</a>
-    <a href="/manage">Manage Listings</a>
 
     <a href="/#" class="auth" on:click={googleSignIn}>Login</a>
 </nav>
